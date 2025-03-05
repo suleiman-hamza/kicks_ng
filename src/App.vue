@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Toaster } from 'vue-sonner';
+import Footer from '@/components/Footer.vue'
 // import Products from './components/Products.vue';
 // import { useCounterStore } from './stores/counter';
 // const store = useCounterStore();
@@ -7,12 +8,8 @@ import { Toaster } from 'vue-sonner';
 
 <template>
   <Toaster position="top-center"/>
-  <nav>
-    <RouterLink to="/">Go to Products</RouterLink> |
-    <RouterLink to="/about">Go to Carts</RouterLink> |
-    <RouterLink to="/fave">Go to Favourites</RouterLink>
-  </nav>
   <RouterView />
+  <Footer />
 </template>
 
 <style scoped>
