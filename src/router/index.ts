@@ -1,11 +1,11 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
-import CartView from '@/views/CartView.vue';
-import ProductView from '@/views/ProductView.vue';
+import Cataview from '@/views/Cataview.vue';
+import Main from '@/views/Main.vue';
 import FavouriteView from '@/views/FavouriteView.vue';
 
 const routes = [
-    { path: '/', component: ProductView },
-    { path: '/about', component: CartView },
+    { path: '/', component: Main },
+    { path: '/about', component: Cataview },
     { path: '/fave', component: FavouriteView }
   ]
   
